@@ -1,12 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 import Styles from "../Styles/Page-Section-Styles/Hero/Hero.module.css";
+
+const TitleVariants = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 1,
+
+    transition: {
+      delay: .2,
+      duration: 1.5,
+    },
+  },
+};
+
+const ButtonVariants = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 1,
+
+    transition: {
+      delay: 1.5,
+      duration: 1.5,
+    },
+  },
+};
 
 const Hero = () => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
-        <h1 className={Styles.Title}>Developer Rook</h1>
+        <motion.h1 className={Styles.Title}
+        variants={TitleVariants}
+        initial="hidden"
+        animate="visible"
+        >Developer Rook</motion.h1>
 
         <p className={Styles.Description}>
           Software engineer with 1 year overall web development experience.
@@ -17,7 +52,11 @@ const Hero = () => {
         </p>
 
         <Link to={"Contact"}>
-          <button className={Styles.Contact_Button}>Get In Touch</button>
+          <motion.button className={Styles.Contact_Button} 
+          variants={ButtonVariants}
+          initial="hidden"
+          animate="visible"
+          >Get In Touch</motion.button>
         </Link>
       </div>
     </div>
