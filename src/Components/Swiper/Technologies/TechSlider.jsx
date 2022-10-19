@@ -20,7 +20,7 @@ const TechSlider = () => {
 
   return (
     <div className={Styles.Swiper_Container}>
-      <h3 className={Styles.Swiper_Title}>Technologies Used</h3>
+      {/* <h3 className={Styles.Swiper_Title}>Technologies Used</h3> */}
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
@@ -38,27 +38,27 @@ const TechSlider = () => {
         breakpoints={{
           360: {
             width: 360,
-            slidesPerView: 2,
+            slidesPerView: 1.5,
             spaceBetween: 20,
           },
           380: {
             width: 380,
-            slidesPerView: 1.2,
+            slidesPerView: 1.5,
             spaceBetween: 10,
           },
           480: {
             width: 480,
-            slidesPerView: 1.5,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 10,
           },
           768: {
             width: 768,
-            slidesPerView: 5,
+            slidesPerView: 2.5,
             spaceBetween: 20,
           },
           1920: {
             width: 1920,
-            slidesPerView: 8,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
         }}
