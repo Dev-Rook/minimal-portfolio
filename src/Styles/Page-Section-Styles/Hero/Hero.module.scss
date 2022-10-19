@@ -12,7 +12,6 @@
   width: 100%;
 
   .Content_Container {
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
 
@@ -29,7 +28,7 @@
 
     .Title {
       color: white;
-      font-family: sans-serif;
+      font-family: "Nunito", sans-serif;
       font-size: 50px;
       font-weight: 200;
       text-align: center;
@@ -40,7 +39,7 @@
 
     .Description {
       color: white;
-      font-family: sans-serif;
+      font-family: "Nunito", sans-serif;
       font-size: 18px;
       font-weight: 200;
       text-align: center;
@@ -49,12 +48,12 @@
 
     .Contact_Button {
       border: 2px solid black;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
 
       padding: 5px;
 
-      color: white;
-      font-family: sans-serif;
+      color: #319795;
+      font-family: "Nunito", sans-serif;
       font-size: 18px;
       font-weight: 200;
       text-align: center;
@@ -81,6 +80,16 @@
       }
       .Description {
         font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Section {
+    .Content_Container {
+      .Description {
+        font-size: 13px;
       }
     }
   }

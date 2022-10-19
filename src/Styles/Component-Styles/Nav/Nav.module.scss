@@ -1,0 +1,89 @@
+.Nav {
+  display: flex;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  padding: 5px;
+
+  justify-content: space-between;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  z-index: 10;
+  transition: 0.5s;
+
+  .Left_Side,
+  .Right_Side {
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .Left_Side {
+    .Image_Container {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 30px;
+      width: 30px;
+
+      .Logo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .Right_Side {
+    .Navlink_Container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .NavItem {
+        .Navlink {
+          color: white;
+          font-family: "Nunito", sans-serif;
+          font-size: 15px;
+          font-weight: 200;
+        }
+      }
+    }
+
+    .Menu_Icon {
+      display: none;
+    }
+  }
+}
+
+// Media Queries Start
+
+@media only screen and (max-width: 768px) {
+  .Nav {
+    .Right_Side {
+      .Navlink_Container {
+        display: none;
+      }
+      .Menu_Icon {
+        display: block;
+      }
+    }
+  }
+}
+
+// Media Queries End
