@@ -1,15 +1,43 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
+
+const NavVariants = {
+  hidden: {
+    y: "-100vh",
+    opacity: 0
+  },
+
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    transition: {
+      delay: .2,
+      duration: 1.5
+    }
+  }
+}
+
+
 const Nav = () => {
   return (
-    <div className={Styles.Nav}>
+    <motion.div className={Styles.Nav}
+    variants={NavVariants}
+    initial="hidden"
+    animate="visible"
+    >
       <div className={Styles.Left_Side}>
         <div className={Styles.Image_Container}>
-          <img src="" alt="" className={Styles.Logo} />
+          <img
+            src={`https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Images/Carbon%20Claws.png?raw=true`}
+            alt=""
+            className={Styles.Logo}
+          />
         </div>
       </div>
 
@@ -42,7 +70,7 @@ const Nav = () => {
           className={Styles.Menu_Icon}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
