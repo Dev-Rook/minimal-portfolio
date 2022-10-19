@@ -1,1 +1,59 @@
-/*# sourceMappingURL=TechSlider.module.css.map */
+.Swiper_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.Swiper_Container .Swiper_Title {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  transition: 0.5s;
+  text-shadow: 0px 1px 1px black;
+}
+.Swiper_Container .Swiper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.Swiper_Container .Swiper .Card {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width: 200px;
+}
+.Swiper_Container .Swiper .Card .Image_Container {
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+.Swiper_Container .Swiper .Card .Image_Container .Image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=TechSlider.module.css.map */
