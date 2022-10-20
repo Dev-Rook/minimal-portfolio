@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "Image": "",
+        "Title": "Fake Online Store",
+        "Description": "This project was created in React JS and utilizes: Axios to get fake product API data in order to populate the sliders and product pages.",
+        "Stacks": {
+            "stack_1": "",
+            "stack_2": "",
+            "stack_3": "",
+            "stack_4": "",
+            "stack_5": "",
+            "stack_6": ""
+        },
+        "Links": {
+            "Code": "",
+            "Demo": ""
+        }
+    },
+    {
+        "id": 2,
+        "Image": "",
+        "Title": "Project Title",
+        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Stacks": {
+            "stack_1": "",
+            "stack_2": "",
+            "stack_3": "",
+            "stack_4": "",
+            "stack_5": "",
+            "stack_6": ""
+        },
+        "Links": {
+            "Code": "",
+            "Demo": ""
+        }
+    },
+    {
+        "id": 3,
+        "Image": "",
+        "Title": "Project Title",
+        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Stacks": {
+            "stack_1": "",
+            "stack_2": "",
+            "stack_3": "",
+            "stack_4": "",
+            "stack_5": "",
+            "stack_6": ""
+        },
+        "Links": {
+            "Code": "",
+            "Demo": ""
+        }
+    },
+    {
+        "id": 4,
+        "Image": "",
+        "Title": "Project Title",
+        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Stacks": {
+            "stack_1": "",
+            "stack_2": "",
+            "stack_3": "",
+            "stack_4": "",
+            "stack_5": "",
+            "stack_6": ""
+        },
+        "Links": {
+            "Code": "",
+            "Demo": ""
+        }
+    }
+]
