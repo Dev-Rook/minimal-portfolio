@@ -78,7 +78,8 @@ const TechSlider = () => {
               <SwiperSlide key={value.id}>
                 <div className={Styles.Card}>
                   <div className={Styles.Image_Container}>
-                    <img src={value.Image} alt="" className={Styles.Image} />
+                    <img src={value.Image} alt="" 
+                    className={Styles.Image} />
                   </div>
                   <p className={Styles.Card_Title}>{value.Title}</p>
                 </div>
