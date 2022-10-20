@@ -55,12 +55,12 @@ const TechSlider = () => {
           },
           480: {
             width: 480,
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           768: {
             width: 768,
-            slidesPerView: 2.5,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           1920: {

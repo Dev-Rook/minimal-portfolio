@@ -42,8 +42,6 @@
   width: 200px;
 }
 .Swiper_Container .Swiper .Card .Image_Container {
-  border: 2px solid black;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

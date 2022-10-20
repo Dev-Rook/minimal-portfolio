@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/React-Icon.png?raw=true",
         "Title": "React JS"
     },
     {
         "id": 2,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/JavaScript-Icon.png?raw=true",
         "Title": "JavaScript"
     },
     {
         "id": 3,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/TypeScript-Icon.png?raw=true",
         "Title": "TypeScript"
     },
     {
         "id": 1,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/Html-Icon.png?raw=true",
         "Title": "Html"
     },
     {
         "id": 4,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/Css-Icon.png?raw=true",
         "Title": "Css"
     },
     {
         "id": 5,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/Sass-Icon.png?raw=true",
         "Title": "Scss"
     },
     {
         "id": 6,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/MaterialUI-Logo.png?raw=true",
         "Title": "Material UI"
     },
     {
         "id": 7,
-        "image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Icons/Bootstrap-Icon.png?raw=true",
         "Title": "Bootstrap"
     },
     {
         "id": 8,
-        "image": "",
+        "Image": "https://raw.githubusercontent.com/Dev-Rook/minimal-portfolio/2f1fe21347b5d7ed595b9333ff025318e03ad9ba/src/Assets/Icons/Npm-Logo.svg",
         "Title": "NPM"
     }
 ]
