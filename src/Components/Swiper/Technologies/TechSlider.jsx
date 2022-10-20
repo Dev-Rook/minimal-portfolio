@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Styles from "../../../Styles/Component-Styles/Swiper-Styles/Tech-Slider/TechSlider.module.css";
 
 // Import Swiper React components
@@ -18,8 +20,13 @@ import TechData from "../../Data/TechData.json";
 const TechSlider = () => {
   const [data, setData] = useState(TechData);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className={Styles.Swiper_Container}>
+    <div data-aos="fade-right" data-aos-duration="1000" className={Styles.Swiper_Container}>
       {/* <h3 className={Styles.Swiper_Title}>Technologies Used</h3> */}
       <Swiper
         speed={800}
@@ -79,6 +86,7 @@ const TechSlider = () => {
             );
           })}
       </Swiper>
+
     </div>
   );
 };

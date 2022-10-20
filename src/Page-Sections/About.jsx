@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Styles from "../Styles/Page-Section-Styles/About/About.module.css";
 
 import TechSlider from "../Components/Swiper/Technologies/TechSlider";
 
-
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
-        <h1 className={Styles.Title}>About Developer Rook</h1>
+        <h1 className={Styles.Title} data-aos="fade-up" data-aos-duration="1000" >
+          About Developer Rook
+        </h1>
 
         <p className={Styles.Description}>
           My journey in coding begun around 2019-2018 when I decided to try my
           hand at learning Python because it seemed cool to code & from my
           research was the “Easiest Programing Language To Learn”. Due to not
           having a set goal or purpose in coding, I lost interest after a while.
-{/* 
+          {/* 
           <br />
           <br />
 
