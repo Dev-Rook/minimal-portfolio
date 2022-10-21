@@ -39,4 +39,16 @@ ul {
   align-items: center;
   height: 100%;
   width: 100%;
+}
+.App .Back_To_Top_Icon {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 99;
+  color: white;
+  transition: 1.5s;
+  transform: translateX(100vh);
+}
+.App .Show_Back_To_Top {
+  transform: translateX(0%);
 }/*# sourceMappingURL=App.module.css.map */
