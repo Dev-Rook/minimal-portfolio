@@ -1,22 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Styles from "../Styles/Page-Section-Styles/Portfolio/Portfolio.module.css";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LaunchIcon from '@mui/icons-material/Launch';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 import ProjectData from "../Components/Data/ProjectData.json";
 
 const Portfolio = () => {
   const [data, setData] = useState(ProjectData);
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className={Styles.Section}>
-      <h3 className={Styles.Title}>Some Things I have Built</h3>
+      <div className={Styles.Content_Container}>
+        <h3
+          className={Styles.Title}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some Things I have Built
+        </h3>
+
+        <p className={Styles.Description}>
+          These are a handful of featured projects
+        </p>
+      </div>
+
       <div className={Styles.Project_Wrapper}>
         {data &&
           data.map((value) => {
             return (
-              <div className={Styles.Project_Card}>
+              <div
+                className={Styles.Project_Card}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className={Styles.Image_Container}>
                   <img
                     src={value.Image}

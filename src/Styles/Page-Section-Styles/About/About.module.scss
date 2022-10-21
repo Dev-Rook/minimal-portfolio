@@ -1,90 +1,87 @@
 .Section {
-    border: 1px solid white;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  .Content_Container {
     display: flex;
     flex-direction: column;
-  
+
     padding: 5px;
-  
+    gap: 30px;
+
     justify-content: center;
     align-items: center;
-  
-    height: 100%;
-    width: 100%;
-  
-    .Content_Container {
-      display: flex;
-      flex-direction: column;
-  
-      padding: 5px;
-      gap: 30px;
-  
-      justify-content: center;
-      align-items: center;
-  
-      height: fit-content;
-      width: 800px;
 
-      margin-top: 300px;
-      margin-bottom: 300px;
-  
+    height: fit-content;
+    width: 800px;
+
+    margin-top: 300px;
+    margin-bottom: 300px;
+
+    transition: 0.5s;
+
+    .Title {
+      color: white;
+      font-family: "Nunito", sans-serif;
+      font-size: 50px;
+      font-weight: 200;
+      text-align: center;
       transition: 0.5s;
-  
+
+      text-shadow: 0px 1px 1px black;
+    }
+
+    .Description {
+      color: white;
+      font-family: "Nunito", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      text-align: center;
+      transition: 0.5s;
+    }
+  }
+}
+
+// Media Queries Start
+
+@media only screen and (max-width: 810px) {
+  .Section {
+    .Content_Container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Section {
+    .Content_Container {
       .Title {
-        color: white;
-        font-family: "Nunito", sans-serif;
-        font-size: 50px;
-        font-weight: 200;
-        text-align: center;
-        transition: 0.5s;
-  
-        text-shadow: 0px 1px 1px black;
+        font-size: 35px;
       }
-  
       .Description {
-        color: white;
-        font-family: "Nunito", sans-serif;
-        font-size: 18px;
-        font-weight: 200;
-        text-align: center;
-        transition: 0.5s;
-      }
-  
-      
-    }
-  }
-  
-  // Media Queries Start
-  
-  @media only screen and (max-width: 810px) {
-    .Section {
-      .Content_Container {
-        width: 100%;
+        font-size: 15px;
       }
     }
   }
-  
-  @media only screen and (max-width: 550px) {
-    .Section {
-      .Content_Container {
-        .Title {
-          font-size: 35px;
-        }
-        .Description {
-          font-size: 15px;
-        }
+}
+
+@media only screen and (max-width: 320px) {
+  .Section {
+    .Content_Container {
+      .Description {
+        font-size: 13px;
       }
     }
   }
-  
-  @media only screen and (max-width: 320px) {
-    .Section {
-      .Content_Container {
-        .Description {
-          font-size: 13px;
-        }
-      }
-    }
-  }
-  
-  // Media Queries End
-  
+}
+
+// Media Queries End

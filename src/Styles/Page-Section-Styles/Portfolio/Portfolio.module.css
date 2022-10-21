@@ -11,7 +11,20 @@
   height: 100%;
   width: 100%;
 }
-.Section .Title {
+.Section .Content_Container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 800px;
+  transition: 0.5s;
+}
+.Section .Content_Container .Title {
   color: white;
   font-family: "Nunito", sans-serif;
   font-size: 50px;
@@ -19,6 +32,14 @@
   text-align: center;
   transition: 0.5s;
   text-shadow: 0px 1px 1px black;
+}
+.Section .Content_Container .Description {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  transition: 0.5s;
 }
 .Section .Project_Wrapper {
   display: flex;
@@ -92,6 +113,15 @@
   .Section .Content_Container,
 .Section .Project_Wrapper {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 605px) {
+  .Section .Project_Wrapper .Project_Card {
+    width: 100%;
+  }
+  .Section .Project_Wrapper .Project_Card .Image_Container {
+    width: 100%;
+    height: 250px;
   }
 }
 @media only screen and (max-width: 550px) {

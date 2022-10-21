@@ -55,7 +55,7 @@ const Nav = () => {
           </li>
           <li className={Styles.NavItem}>
             <Link to={""} className={Styles.Navlink}>
-              Prtfolio
+              Portfolio
             </Link>
           </li>
           <li className={Styles.NavItem}>
