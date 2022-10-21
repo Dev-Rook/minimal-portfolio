@@ -19,20 +19,20 @@ const Portfolio = () => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
-        <h3
-          className={Styles.Title}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          Some Things I have Built
-        </h3>
+        <div className={Styles.Title_Container}>
+          <h3
+            className={Styles.Title}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Some Things I have Built
+          </h3>
 
-        <p className={Styles.Description}>
-          These are a handful of featured projects
-        </p>
-      </div>
+          <p className={Styles.Description}>
+            These are a handful of featured projects
+          </p>
+        </div>
 
-      <div className={Styles.Project_Wrapper}>
         {data &&
           data.map((value) => {
             return (
@@ -40,6 +40,7 @@ const Portfolio = () => {
                 className={Styles.Project_Card}
                 data-aos="fade-up"
                 data-aos-duration="1000"
+                key={value.id}
               >
                 <div className={Styles.Image_Container}>
                   <img
@@ -65,10 +66,18 @@ const Portfolio = () => {
                   {/* </div> */}
 
                   <div className={Styles.Bottom}>
-                    <a href={value.Links.Code} target={"_blank"} rel={"noreferrer"}>
+                    <a
+                      href={value.Links.Code}
+                      target={"_blank"}
+                      rel={"noreferrer"}
+                    >
                       <GitHubIcon sx={{ fontSize: 40, color: "white" }} />
                     </a>
-                    <a href={value.Links.Demo} target={"_blank"} rel={"noreferrer"}>
+                    <a
+                      href={value.Links.Demo}
+                      target={"_blank"}
+                      rel={"noreferrer"}
+                    >
                       <LaunchIcon sx={{ fontSize: 40, color: "white" }} />
                     </a>
                   </div>

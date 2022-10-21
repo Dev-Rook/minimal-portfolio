@@ -52,7 +52,8 @@
   text-align: center;
   transition: 0.5s;
 }
-.Section .Content_Container .Project_Card {
+.Section .Content_Container .Card {
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -61,50 +62,58 @@
   height: 100%;
   width: 600px;
 }
-.Section .Content_Container .Project_Card .Image_Container {
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+.Section .Content_Container .Card .Head {
+  border: 1px solid white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  height: 400px;
-  width: 600px;
-}
-.Section .Content_Container .Project_Card .Image_Container .Image {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.Section .Content_Container .Project_Card .Information_Box {
+.Section .Content_Container .Card .Head .Links {
+  display: flex;
+  gap: 20px;
+}
+.Section .Content_Container .Card .Information_Box {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 5px;
   justify-content: space-evenly;
   align-items: left;
   height: 100%;
   width: 100%;
 }
-.Section .Content_Container .Project_Card .Information_Box .Project_Title {
+.Section .Content_Container .Card .Information_Box .Project_Title {
   color: white;
   font-size-adjust: 25px;
   font-weight: 300;
 }
-.Section .Content_Container .Project_Card .Information_Box .Description {
+.Section .Content_Container .Card .Information_Box .Description {
   color: white;
   font-size-adjust: 18px;
   font-weight: 300;
 }
-.Section .Content_Container .Project_Card .Information_Box .Bottom {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.Section .Content_Container .Card .Information_Box .Stack_Container {
   display: flex;
   gap: 20px;
   justify-content: space-evenly;
-  align-items: left;
-  height: 100%;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.Section .Content_Container .Card .Information_Box .Stack_Container .Stack {
+  border: 2px solid black;
+  display: flex;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 810px) {
@@ -114,10 +123,10 @@
   }
 }
 @media only screen and (max-width: 605px) {
-  .Section .Content_Container .Project_Card {
+  .Section .Content_Container .Card {
     width: 100%;
   }
-  .Section .Content_Container .Project_Card .Image_Container {
+  .Section .Content_Container .Card .Image_Container {
     width: 100%;
     height: 250px;
   }
@@ -129,4 +138,4 @@
   .Section .Content_Container .Title_Container .Description {
     font-size: 15px;
   }
-}/*# sourceMappingURL=Portfolio.module.css.map */
+}/*# sourceMappingURL=OtherProjects.module.css.map */

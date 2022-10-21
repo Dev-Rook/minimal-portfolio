@@ -2,7 +2,7 @@
   border: 1px solid white;
   display: flex;
   flex-direction: column;
-  
+
   gap: 80px;
 
   justify-content: center;
@@ -60,7 +60,8 @@
       }
     }
 
-    .Project_Card {
+    .Card {
+      border: 1px solid white;
       display: flex;
       flex-direction: column;
 
@@ -72,23 +73,18 @@
       height: 100%;
       width: 600px;
 
-      .Image_Container {
-        box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
-          rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
-
+      .Head {
+        border: 1px solid white;
         display: flex;
 
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        overflow: hidden;
 
-        height: 400px;
-        width: 600px;
+        width: 100%;
 
-        .Image {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
+        .Links {
+          display: flex;
+          gap: 20px;
         }
       }
 
@@ -97,6 +93,8 @@
         flex-direction: column;
 
         gap: 10px;
+        padding: 5px;
+
         justify-content: space-evenly;
         align-items: left;
 
@@ -115,16 +113,27 @@
           font-weight: 300;
         }
 
-        .Bottom {
-          border: 1px solid rgba(255, 255, 255, 0.1);
+        .Stack_Container {
           display: flex;
-
           gap: 20px;
           justify-content: space-evenly;
-          align-items: left;
+          align-items: center;
 
-          height: 100%;
+          height: fit-content;
           width: fit-content;
+
+          .Stack {
+            border: 2px solid black;
+            display: flex;
+            padding: 2px;
+
+            background-color: rgba(0, 0, 0, 0.5);
+
+            color: white;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+          }
         }
       }
     }
@@ -145,7 +154,7 @@
 @media only screen and (max-width: 605px) {
   .Section {
     .Content_Container {
-      .Project_Card {
+      .Card {
         width: 100%;
         .Image_Container {
           width: 100%;

@@ -65,15 +65,18 @@ const TechSlider = () => {
           },
           1920: {
             width: 1920,
-            slidesPerView: 3,
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          2000: {
+            width: 2000,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
         }}
       >
         {data &&
           data.map((value) => {
-            const { id, Image, Title } = value;
-
             return (
               <SwiperSlide key={value.id}>
                 <div className={Styles.Card}>
