@@ -65,8 +65,12 @@ const Portfolio = () => {
                   {/* </div> */}
 
                   <div className={Styles.Bottom}>
-                    <GitHubIcon sx={{ fontSize: 40, color: "white" }} />
-                    <LaunchIcon sx={{ fontSize: 40, color: "white" }} />
+                    <a href={value.Links.Code} target={"_blank"} rel={"noreferrer"}>
+                      <GitHubIcon sx={{ fontSize: 40, color: "white" }} />
+                    </a>
+                    <a href={value.Links.Demo} target={"_blank"} rel={"noreferrer"}>
+                      <LaunchIcon sx={{ fontSize: 40, color: "white" }} />
+                    </a>
                   </div>
                 </div>
               </div>
