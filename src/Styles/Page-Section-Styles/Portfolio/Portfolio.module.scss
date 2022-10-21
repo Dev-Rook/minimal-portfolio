@@ -4,37 +4,107 @@
   flex-direction: column;
 
   padding: 5px;
+  gap: 80px;
 
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  padding-top: 300px;
+  padding-bottom: 300px;
+
+  height: 100%;
   width: 100%;
 
-  .Content_Container {
+  .Title {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    transition: 0.5s;
+
+    text-shadow: 0px 1px 1px black;
+  }
+
+  .Project_Wrapper {
     display: flex;
     flex-direction: column;
 
-    padding: 5px;
-    gap: 30px;
+    gap: 100px;
 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
     height: fit-content;
-    width: 800px;
+    width: fit-content;
 
-    transition: 0.5s;
+    .Project_Card {
+      display: flex;
+      flex-direction: column;
 
-    .Title {
-      color: white;
-      font-family: "Nunito", sans-serif;
-      font-size: 50px;
-      font-weight: 200;
-      text-align: center;
-      transition: 0.5s;
+      gap: 20px;
 
-      text-shadow: 0px 1px 1px black;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 600px;
+
+      .Image_Container {
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+          rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        height: 400px;
+        width: 600px;
+
+        .Image {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .Information_Box {
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: left;
+
+        height: 100%;
+        width: 100%;
+
+        .Project_Title {
+          color: white;
+          font-size-adjust: 25px;
+          font-weight: 300;
+        }
+
+        .Description {
+          color: white;
+          font-size-adjust: 18px;
+          font-weight: 300;
+        }
+
+        .Bottom {
+          border: 1px solid rgba(255, 255, 255, .1);
+          display: flex;
+
+          gap: 20px;
+          justify-content: space-evenly;
+          align-items: left;
+
+          height: 100%;
+          width: fit-content;
+        }
+      }
     }
   }
 }
@@ -43,7 +113,8 @@
 
 @media only screen and (max-width: 810px) {
   .Section {
-    .Content_Container {
+    .Content_Container,
+    .Project_Wrapper {
       width: 100%;
     }
   }

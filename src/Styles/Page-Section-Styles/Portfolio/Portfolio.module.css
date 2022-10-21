@@ -3,25 +3,15 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
+  gap: 80px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  height: 100%;
   width: 100%;
 }
-.Section .Content_Container {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 800px;
-  transition: 0.5s;
-}
-.Section .Content_Container .Title {
+.Section .Title {
   color: white;
   font-family: "Nunito", sans-serif;
   font-size: 50px;
@@ -30,9 +20,77 @@
   transition: 0.5s;
   text-shadow: 0px 1px 1px black;
 }
+.Section .Project_Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Section .Project_Wrapper .Project_Card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 600px;
+}
+.Section .Project_Wrapper .Project_Card .Image_Container {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 400px;
+  width: 600px;
+}
+.Section .Project_Wrapper .Project_Card .Image_Container .Image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Section .Project_Wrapper .Project_Card .Information_Box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: left;
+  height: 100%;
+  width: 100%;
+}
+.Section .Project_Wrapper .Project_Card .Information_Box .Project_Title {
+  color: white;
+  font-size-adjust: 25px;
+  font-weight: 300;
+}
+.Section .Project_Wrapper .Project_Card .Information_Box .Description {
+  color: white;
+  font-size-adjust: 18px;
+  font-weight: 300;
+}
+.Section .Project_Wrapper .Project_Card .Information_Box .Bottom {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: left;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 @media only screen and (max-width: 810px) {
-  .Section .Content_Container {
+  .Section .Content_Container,
+.Section .Project_Wrapper {
     width: 100%;
   }
 }
