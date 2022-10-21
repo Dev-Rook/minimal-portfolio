@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Styles from "../Styles/Page-Section-Styles/About/About.module.css";
 
-import TechSlider from "../Components/Swiper/Technologies/TechSlider";
+// import TechSlider from "../Components/Swiper/Technologies/TechSlider";
 
 const About = () => {
   useEffect(() => {
@@ -47,7 +47,7 @@ const About = () => {
           projects day in, day out. */}
         </p>
 
-        <TechSlider />
+        {/* <TechSlider /> */}
       </div>
     </div>
   );
