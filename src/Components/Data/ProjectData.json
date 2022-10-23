@@ -2,7 +2,7 @@
     {
         "id": 1,
         "Image": "",
-        "Title": "Fake Online Store",
+        "Title": "<Merch",
         "Description": "This project was created in React JS and utilizes: Axios to get fake product API data in order to populate the sliders and product pages.",
         "Stacks": {
             "stack_1": "",
@@ -20,8 +20,8 @@
     {
         "id": 2,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "J22",
+        "Description": "This project is still under development, however it is a website in which one can be though how to opperate a J22 sailboat. From the different types of knots and ropes all the way up to rigging and manuevering on the water.",
         "Stacks": {
             "stack_1": "",
             "stack_2": "",

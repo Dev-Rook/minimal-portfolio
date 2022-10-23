@@ -58,7 +58,7 @@ const About = () => {
                 data-aos-duration="1000"
               >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
-                javaScript
+                JavaScript
               </li>
               <li
                 className={Styles.List_Item}
