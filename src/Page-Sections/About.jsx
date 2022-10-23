@@ -34,42 +34,80 @@ const About = () => {
         </p>
 
         <div className={Styles.Technolgies_Container}>
-          <p className={Styles.Container_Title}>Technologies:</p>
+          <p
+            className={Styles.Container_Title}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Technologies:
+          </p>
 
           <div className={Styles.Tech_List_Container}>
             <ul className={Styles.Tech_List}>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 React JS
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 javaScript
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 TypeScript
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 Html & Css
               </li>
             </ul>
 
             <ul className={Styles.Tech_List}>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 Axios
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 Sass
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 Matuerial UI
               </li>
-              <li className={Styles.List_Item}>
+              <li
+                className={Styles.List_Item}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <NavigateNextIcon sx={{ fontSize: 10, color: "#319795" }} />
                 NPM
               </li>
