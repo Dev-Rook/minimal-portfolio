@@ -5,6 +5,7 @@ import Hero from "../Page-Sections/Hero";
 import About from "../Page-Sections/About";
 import Portfolio from "../Page-Sections/Portfolio";
 import OtherProject from "../Page-Sections/OtherProject";
+import GetInTouch from "../Page-Sections/GetInTouch"
 
 const Landing = () => {
   return <div className={Styles.Page}>
@@ -12,6 +13,7 @@ const Landing = () => {
     <About />
     <Portfolio />
     <OtherProject />
+    <GetInTouch />
   </div>;
 };
 

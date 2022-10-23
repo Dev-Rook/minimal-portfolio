@@ -23,7 +23,11 @@ const OtherProject = () => {
             Other Projects
           </h3>
 
-          <p className={Styles.Description}>
+          <p
+            className={Styles.Description}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             These are some other noteworthy projects
           </p>
         </div>
