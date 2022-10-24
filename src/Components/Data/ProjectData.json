@@ -23,12 +23,12 @@
         "Title": "Learn J22",
         "Description": "This project is still under development, however it is a website in which one can be though how to opperate a J22 sailboat. From the different types of knots and ropes all the way up to rigging and manuevering on the water.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
-            "stack_3": "",
-            "stack_4": "",
-            "stack_5": "",
-            "stack_6": ""
+            "stack_1": "React",
+            "stack_2": "Axios",
+            "stack_3": "Aos",
+            "stack_4": "Material UI",
+            "stack_5": "JavaScript",
+            "stack_6": "Scss"
         },
         "Links": {
             "Code": "",

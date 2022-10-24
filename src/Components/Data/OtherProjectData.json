@@ -23,8 +23,8 @@
         "Title": "Temperature Controller",
         "Description": "This app is essensially a thermostant. Usining JavaScript if else statements and useState() hooks the temperature value and color can be altered.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
+            "stack_1": "React",
+            "stack_2": "JavaScript",
             "stack_3": "",
             "stack_4": "",
             "stack_5": "",
