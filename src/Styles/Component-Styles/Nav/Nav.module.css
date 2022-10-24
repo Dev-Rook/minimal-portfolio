@@ -52,6 +52,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 200;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 .Nav .Right_Side .Menu_Icon {
   display: none;
