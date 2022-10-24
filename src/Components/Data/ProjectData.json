@@ -2,7 +2,7 @@
     {
         "id": 1,
         "Image": "",
-        "Title": "<Merch",
+        "Title": "Merch",
         "Description": "This project was created in React JS and utilizes: Axios to get fake product API data in order to populate the sliders and product pages.",
         "Stacks": {
             "stack_1": "",
@@ -13,14 +13,14 @@
             "stack_6": ""
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/merch",
+            "Demo": "https://fakemerch.vercel.app/"
         }
     },
     {
         "id": 2,
         "Image": "",
-        "Title": "J22",
+        "Title": "Learn J22",
         "Description": "This project is still under development, however it is a website in which one can be though how to opperate a J22 sailboat. From the different types of knots and ropes all the way up to rigging and manuevering on the water.",
         "Stacks": {
             "stack_1": "",

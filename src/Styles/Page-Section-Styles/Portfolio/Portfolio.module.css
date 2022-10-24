@@ -41,7 +41,7 @@
   font-weight: 200;
   text-align: center;
   transition: 0.5s;
-  text-shadow: 0px 1px 1px black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 .Section .Content_Container .Title_Container .Description {
   color: white;
@@ -50,6 +50,7 @@
   font-weight: 200;
   text-align: center;
   transition: 0.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 .Section .Content_Container .Project_Card {
   display: flex;
@@ -88,11 +89,13 @@
   color: white;
   font-size-adjust: 25px;
   font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 .Section .Content_Container .Project_Card .Information_Box .Description {
   color: white;
   font-size-adjust: 18px;
   font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
 .Section .Content_Container .Project_Card .Information_Box .Bottom {
   border: 1px solid rgba(255, 255, 255, 0.1);

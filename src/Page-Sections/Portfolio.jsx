@@ -10,6 +10,7 @@ import ProjectData from "../Components/Data/ProjectData.json";
 
 const Portfolio = () => {
   const [data, setData] = useState(ProjectData);
+  const [visible, setVisible] = useState(2)
 
   useEffect(() => {
     AOS.init();
@@ -34,7 +35,7 @@ const Portfolio = () => {
         </div>
 
         {data &&
-          data.map((value) => {
+          data.slice(0, visible).map((value) => {
             return (
               <div
                 className={Styles.Project_Card}
