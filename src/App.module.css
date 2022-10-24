@@ -43,7 +43,7 @@ ul {
 .App .Back_To_Top_Icon {
   position: fixed;
   bottom: 50px;
-  right: 10px;
+  right: 0px;
   z-index: 99;
   color: white;
   transition: 1.5s;

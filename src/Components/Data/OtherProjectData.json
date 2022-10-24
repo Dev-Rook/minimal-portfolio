@@ -2,26 +2,26 @@
     {
         "id": 1,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "Product Filter",
+        "Description": "This project was built to demonstrate my new abiltiy to filter data via the map() and filter() array methods.",
         "Stacks": {
             "stack_1": "React",
-            "stack_2": "",
+            "stack_2": "JavaScript",
             "stack_3": "",
             "stack_4": "",
             "stack_5": "",
             "stack_6": ""
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/Product-Filter-Test-1/tree/main",
+            "Demo": "https://filter-test.vercel.app/"
         }
     },
     {
         "id": 2,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "Temperature Controller",
+        "Description": "This app is essensially a thermostant. Usining JavaScript if else statements and useState() hooks the temperature value and color can be altered.",
         "Stacks": {
             "stack_1": "",
             "stack_2": "",
@@ -31,44 +31,44 @@
             "stack_6": ""
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/temperature-control-app/tree/master",
+            "Demo": "https://variation-control.vercel.app/"
         }
     },
     {
         "id": 3,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "Movie Filter App",
+        "Description": "This project stems from learning how to filter onject data. It is essentially movie cards populated with data that can be filtered using a search input.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
-            "stack_3": "",
+            "stack_1": "React",
+            "stack_2": "Scss",
+            "stack_3": "JavaScript",
             "stack_4": "",
             "stack_5": "",
             "stack_6": ""
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/Movie-Filter-App/tree/main",
+            "Demo": "https://movie-filter-app.vercel.app/"
         }
     },
     {
         "id": 4,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "Snapchat Clone",
+        "Description": "This project although unfinished, was my first attempt of building/cloning a large project in React.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
-            "stack_3": "",
+            "stack_1": "React",
+            "stack_2": "AOS",
+            "stack_3": "Bootstrap",
             "stack_4": "",
             "stack_5": "",
             "stack_6": ""
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/snapchat-clone",
+            "Demo": "https://dev-rook-snapchat-clone.netlify.app/"
         }
     }
 ]
