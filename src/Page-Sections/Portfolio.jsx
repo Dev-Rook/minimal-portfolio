@@ -57,12 +57,12 @@ const Portfolio = () => {
                   <p className={Styles.Description}>{value.Description}</p>
 
                   <div className={Styles.Stack_Container}>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_1}</div>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_2}</div>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_3}</div>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_4}</div>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_5}</div>
-                    <div className={Styles.Stack}>{value.Stacks.Stack_6}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_1}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_2}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_3}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_4}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_5}</div>
+                    <div className={Styles.Stack}>{value.Stacks.stack_6}</div>
                   </div>
                   {/* </div> */}
 

@@ -1,7 +1,7 @@
 .Section {
   display: flex;
   flex-direction: column;
-  
+
   gap: 80px;
 
   justify-content: center;
@@ -46,7 +46,7 @@
         text-align: center;
         transition: 0.5s;
 
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.96);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
       }
 
       .Description {
@@ -56,7 +56,7 @@
         font-weight: 200;
         text-align: center;
         transition: 0.5s;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.96);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
       }
     }
 
@@ -73,8 +73,8 @@
       width: 600px;
 
       .Image_Container {
-          box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
-            rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
+          rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
 
         display: flex;
 
@@ -107,14 +107,38 @@
           color: white;
           font-size-adjust: 25px;
           font-weight: 300;
-          text-shadow: 2px 2px 4px rgba(0,0,0,0.96);
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
         }
 
         .Description {
           color: white;
           font-size-adjust: 18px;
           font-weight: 300;
-          text-shadow: 2px 2px 4px rgba(0,0,0,0.96);
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+        }
+
+        .Stack_Container {
+          display: flex;
+          gap: 20px;
+          justify-content: space-evenly;
+          align-items: center;
+
+          height: fit-content;
+          width: fit-content;
+
+          .Stack {
+            border: 2px solid black;
+            display: flex;
+            padding: 2px;
+
+            background-color: rgba(0, 0, 0, 0.5);
+
+            color: #319795;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+          }
         }
 
         .Bottom {
@@ -167,6 +191,14 @@
         }
         .Description {
           font-size: 15px;
+        }
+      }
+
+      .Project_Card {
+        .Stack_Container {
+          flex-wrap: wrap;
+          justify-content: left;
+          align-items: left;
         }
       }
     }

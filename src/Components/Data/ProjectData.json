@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "Image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Images/WebSite-Thumbnails/Merch-Web-Logo.jpg.png?raw=true",
         "Title": "Merch",
         "Description": "This project was created in React JS and utilizes: Axios to get fake product API data in order to populate the sliders and product pages.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
-            "stack_3": "",
-            "stack_4": "",
-            "stack_5": "",
-            "stack_6": ""
+            "stack_1": "React JS",
+            "stack_2": "Scss",
+            "stack_3": "Axios",
+            "stack_4": "Swiper JS",
+            "stack_5": "Material UI",
+            "stack_6": "Fake Store API"
         },
         "Links": {
             "Code": "https://github.com/Dev-Rook/merch",

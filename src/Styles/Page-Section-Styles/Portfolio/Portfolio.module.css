@@ -97,6 +97,29 @@
   font-weight: 300;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
 }
+.Section .Content_Container .Project_Card .Information_Box .Stack_Container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Section .Content_Container .Project_Card .Information_Box .Stack_Container .Stack {
+  border: 2px solid black;
+  display: flex;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #319795;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+}
 .Section .Content_Container .Project_Card .Information_Box .Bottom {
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -130,5 +153,10 @@
   }
   .Section .Content_Container .Title_Container .Description {
     font-size: 15px;
+  }
+  .Section .Content_Container .Project_Card .Stack_Container {
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
   }
 }/*# sourceMappingURL=Portfolio.module.css.map */
