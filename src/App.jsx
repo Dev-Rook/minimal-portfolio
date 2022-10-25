@@ -7,6 +7,7 @@ import NavigationIcon from '@mui/icons-material/Navigation';
 import Nav from "./Components/Main/Nav/Nav";
 import SocialIconColumn from "./Components/Social-Icon-Column/SocialIconColumn";
 import Landing from "./Pages/Landing";
+import Contact from "./Pages/Contact";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <SocialIconColumn />
         <Routes>
           <Route path={"/"} element={<Landing />} />
+          <Route path={"Contact"} element={<Contact />} />
         </Routes>
       </BrowserRouter>
 
