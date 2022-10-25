@@ -50,7 +50,7 @@ const OtherProject = () => {
                       <GitHubIcon sx={{ fontSize: 25, color: "white" }} />
                     </a>
                     <a
-                      href={value.Links.Code}
+                      href={value.Links.Demo}
                       target={"_blank"}
                       rel={"noreferrer"}
                     >
