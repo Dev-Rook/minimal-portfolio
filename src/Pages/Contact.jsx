@@ -45,11 +45,7 @@ const Contact = () => {
             Get In Touch
           </h3>
 
-          <p
-            className={Styles.Description}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <p className={Styles.Description}>
             I am interested in freelance oppurtunities and or large/ambitious
             projects. However, if you have other requests or questions feel free
             to shoot me a message.

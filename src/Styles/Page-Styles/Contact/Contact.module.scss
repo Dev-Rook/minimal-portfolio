@@ -13,6 +13,7 @@
     flex-direction: column;
 
     gap: 50px;
+    padding: 5px;
 
     justify-content: center;
     align-items: center;
@@ -20,7 +21,7 @@
     height: fit-content;
     width: 800px;
 
-    margin-top: 300px;
+    margin-top: 100px;
     margin-bottom: 300px;
 
     .Title_Container {
@@ -91,6 +92,7 @@
           color: #319795;
           font-size: 18px;
           font-weight: 300;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
         }
       }
 
@@ -106,12 +108,29 @@
         color: #319795;
         font-size: 18px;
         font-weight: 300;
+
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
       }
       ::-webkit-input-placeholder {
         color: grey;
         font-size: 18px;
         font-weight: 300;
+
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
       }
     }
   }
 }
+
+
+// Media Queries Start
+
+@media only screen and (max-width: 810px) {
+  .Page {
+    .Content_Container {
+      width: 100%;
+    }
+  }
+}
+
+// Media Queries End
