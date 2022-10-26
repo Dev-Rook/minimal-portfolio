@@ -90,4 +90,9 @@
   color: #319795;
   font-size: 18px;
   font-weight: 300;
+}
+.Page .Content_Container .Form ::-webkit-input-placeholder {
+  color: grey;
+  font-size: 18px;
+  font-weight: 300;
 }/*# sourceMappingURL=Contact.module.css.map */
