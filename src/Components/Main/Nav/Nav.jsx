@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {motion} from "framer-motion"
+import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion";
 import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
-
 const NavVariants = {
   hidden: {
     y: "-100vh",
-    opacity: 0
+    opacity: 0,
   },
 
   visible: {
@@ -17,19 +17,19 @@ const NavVariants = {
     opacity: 1,
 
     transition: {
-      delay: .2,
-      duration: 1.5
-    }
-  }
-}
-
+      delay: 0.2,
+      duration: 1.5,
+    },
+  },
+};
 
 const Nav = () => {
   return (
-    <motion.div className={Styles.Nav}
-    variants={NavVariants}
-    initial="hidden"
-    animate="visible"
+    <motion.div
+      className={Styles.Nav}
+      variants={NavVariants}
+      initial="hidden"
+      animate="visible"
     >
       <div className={Styles.Left_Side}>
         <div className={Styles.Image_Container}>
@@ -49,18 +49,32 @@ const Nav = () => {
             </Link>
           </li>
           <li className={Styles.NavItem}>
-            <Link to={""} className={Styles.Navlink}>
+            <ScrollLink
+              to={"About"}
+              py={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className={Styles.Navlink}
+            >
               About
-            </Link>
+            </ScrollLink>
           </li>
           <li className={Styles.NavItem}>
-            <Link to={""} className={Styles.Navlink}>
+            <ScrollLink
+              to={"Portfolio"}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className={Styles.Navlink}
+            >
               Portfolio
-            </Link>
+            </ScrollLink>
           </li>
           <li className={Styles.NavItem}>
-            <Link to={""} className={Styles.Navlink}>
-              Dev Logs
+            <Link to={"Contact"} className={Styles.Navlink}>
+              Contact
             </Link>
           </li>
         </ul>

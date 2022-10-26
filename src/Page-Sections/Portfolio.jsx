@@ -18,7 +18,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className={Styles.Section}>
+    <div className={Styles.Section} id={"Portfolio"}>
       <div className={Styles.Content_Container}>
         <div className={Styles.Title_Container}>
           <h3

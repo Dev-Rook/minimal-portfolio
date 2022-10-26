@@ -12,7 +12,7 @@ const About = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className={Styles.Section}>
+    <div className={Styles.Section} id={"About"}>
       <div className={Styles.Content_Container}>
         <h1
           className={Styles.Title}
