@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import Styles from "../Styles/Page-Section-Styles/Hero/Hero.module.css";
 
 const TitleVariants = {
@@ -12,7 +12,7 @@ const TitleVariants = {
     opacity: 1,
 
     transition: {
-      delay: .2,
+      delay: 0.2,
       duration: 1.5,
     },
   },
@@ -37,11 +37,14 @@ const Hero = () => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
-        <motion.h1 className={Styles.Title}
-        variants={TitleVariants}
-        initial="hidden"
-        animate="visible"
-        >Developer Rook</motion.h1>
+        <motion.h1
+          className={Styles.Title}
+          variants={TitleVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          Developer Rook
+        </motion.h1>
 
         <p className={Styles.Description}>
           Software engineer with 1 year overall web development experience.
@@ -51,13 +54,20 @@ const Hero = () => {
           applications conforming to modern UI/UX standards.
         </p>
 
-        <Link to={"Contact"}>
-          <motion.button className={Styles.Contact_Button} 
-          variants={ButtonVariants}
-          initial="hidden"
-          animate="visible"
-          >Get In Touch</motion.button>
-        </Link>
+        <a
+          target={"_blank"}
+          rel={"noreferrer"}
+          href={`https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJFTMMVFnfhKRhlBJpxRKLKKtzflgzmrWcpjmvnwKHfbjTngpTpBXxzpVzmdhMWNjTDGV`}
+        >
+          <motion.button
+            className={Styles.Contact_Button}
+            variants={ButtonVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            Get In Touch
+          </motion.button>
+        </a>
       </div>
     </div>
   );
