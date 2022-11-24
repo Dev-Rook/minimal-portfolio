@@ -20,8 +20,8 @@
     {
         "id": 2,
         "Image": "",
-        "Title": "Learn J22",
-        "Description": "This project is still under development, however it is a website in which one can be though how to opperate a J22 sailboat. From the different types of knots and ropes all the way up to rigging and manuevering on the water.",
+        "Title": "Montego Bay Yacht Club",
+        "Description": "This project is still under development. When completed it should act as the new and 'Better' website for the Montego Bay Yacht Club.",
         "Stacks": {
             "stack_1": "React",
             "stack_2": "Axios",
@@ -31,8 +31,8 @@
             "stack_6": "Scss"
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/yacht-club",
+            "Demo": "https://yacht-club.vercel.app/"
         }
     },
     {
