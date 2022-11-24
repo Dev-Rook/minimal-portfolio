@@ -89,6 +89,7 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
+          transition: .3s;
         }
       }
 
@@ -151,6 +152,14 @@
 
           height: 100%;
           width: fit-content;
+        }
+      }
+    }
+
+    .Project_Card:is(:hover, :focus) {
+      .Image_Container {
+        .Image {
+          transform: scale(1.2);
         }
       }
     }
