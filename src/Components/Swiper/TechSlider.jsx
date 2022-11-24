@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-import TechData from "../../Data/TechData.json";
+import TechData from "../Data/TechData.json";
 
 const TechSlider = () => {
   const [data, setData] = useState(TechData);

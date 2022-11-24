@@ -74,11 +74,11 @@ const Nav = () => {
 
       <div className={Styles.Right_Side}>
         <ul className={Styles.Navlink_Container}>
-          <li className={Styles.NavItem}>
+          {/* <li className={Styles.NavItem}>
             <Link to={""} className={Styles.Navlink}>
               Home
             </Link>
-          </li>
+          </li> */}
           <li className={Styles.NavItem}>
             <ScrollLink
               to={"About"}
