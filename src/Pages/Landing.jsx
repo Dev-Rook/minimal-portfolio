@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../Styles/Page-Styles/Landing/Landing.module.css";
+import Styles from "../Styles/Page-Styles/Landing.module.scss";
 
 import Hero from "../Page-Sections/Hero";
 import About from "../Page-Sections/About";

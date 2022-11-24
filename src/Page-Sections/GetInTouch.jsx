@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Styles from "../Styles/Page-Section-Styles/Get-In-Touch/GetInTouch.module.css";
+import Styles from "../Styles/Page-Section-Styles/GetInTouch.module.scss";
 
 const GetInTouch = () => {
   const form = useRef();

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Styles from "../Styles/Page-Section-Styles/About/About.module.css";
+import Styles from "../Styles/Page-Section-Styles/About.module.scss";
 
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 

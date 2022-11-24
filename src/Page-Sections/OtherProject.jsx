@@ -1,6 +1,6 @@
 import { DataArray } from "@mui/icons-material";
 import React, { useState } from "react";
-import Styles from "../Styles/Page-Section-Styles/Other-Projects/OtherProjects.module.scss";
+import Styles from "../Styles/Page-Section-Styles/OtherProjects.module.scss";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";

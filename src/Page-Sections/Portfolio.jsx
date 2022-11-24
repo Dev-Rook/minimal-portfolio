@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Styles from "../Styles/Page-Section-Styles/Portfolio/Portfolio.module.css";
+import Styles from "../Styles/Page-Section-Styles/Portfolio.module.scss";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";

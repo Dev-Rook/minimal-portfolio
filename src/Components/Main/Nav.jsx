@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
-import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
+import Styles from "../../Styles/Component-Styles/Nav.module.scss";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";

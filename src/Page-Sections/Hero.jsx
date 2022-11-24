@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Styles from "../Styles/Page-Section-Styles/Hero/Hero.module.css";
+import Styles from "../Styles/Page-Section-Styles/Hero.module.scss";
 
 const TitleVariants = {
   hidden: {
