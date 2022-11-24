@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import DriveFolderUploadIcon from "@mui/icons-material/DriveFolderUpload";
 
-import OtherProjectData from "../Components/Data/OtherProjectData.json";
+import OtherProjectData from "../Assets/Data/OtherProjectData.json";
 
 const OtherProject = () => {
   const [data, setData] = useState(OtherProjectData);

@@ -6,7 +6,7 @@ import Styles from "../Styles/Page-Section-Styles/Portfolio.module.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-import ProjectData from "../Components/Data/ProjectData.json";
+import ProjectData from "../Assets/Data/ProjectData.json";
 
 const Portfolio = () => {
   const [data, setData] = useState(ProjectData);
