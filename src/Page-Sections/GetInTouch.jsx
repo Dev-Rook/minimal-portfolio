@@ -64,7 +64,6 @@ const GetInTouch = () => {
           </button>
         </a> */}
 
-
         <form action="" className={Styles.Form}>
           <fieldset className={Styles.Name__Eamil}>
             <input
@@ -95,6 +94,10 @@ const GetInTouch = () => {
             required
             className={`${Styles.Input} ${Styles.Message}`}
           ></textarea>
+
+          <button type={"submit"} className={Styles.Submit_Button}>
+            Submit
+          </button>
         </form>
       </div>
     </div>

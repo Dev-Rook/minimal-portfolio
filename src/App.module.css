@@ -1,33 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  list-style: none;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 0.125rem;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-::-webkit-scrollbar {
-  width: 0.25rem;
-  border-radius: 0.125rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 0.125rem;
-  background-color: gray;
-}
 
 .App {
   background-color: rgba(0, 0, 0, 0.8);
