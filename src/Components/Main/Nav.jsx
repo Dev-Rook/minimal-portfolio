@@ -6,24 +6,25 @@ import Styles from "../../Styles/Component-Styles/Nav.module.scss";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-// import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-// import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
-// import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-// // import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
-// import LogoDevIcon from "@mui/icons-material/LogoDev";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
+import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+// import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
+import LogoDevIcon from "@mui/icons-material/LogoDev";
+import CodeIcon from "@mui/icons-material/Code";
 
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import InsertLinkIcon from "@mui/icons-material/InsertLink";
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InsertLinkIcon from "@mui/icons-material/InsertLink";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
-// // Material UI Accordion Imports Start
-// import Accordion from "@mui/material/Accordion";
-// import AccordionDetails from "@mui/material/AccordionDetails";
-// import AccordionSummary from "@mui/material/AccordionSummary";
-// import Typography from "@mui/material/Typography";
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// // Material UI Accordion Imports End
+// Material UI Accordion Imports Start
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// Material UI Accordion Imports End
 
 const NavVariants = {
   hidden: {
@@ -49,11 +50,23 @@ const Nav = () => {
     setMenu((prev) => !prev);
   };
 
-  // const [expanded, setExpanded] = React.useState(false);
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-  // const handleChange = (panel) => (event, isExpanded) => {
-  //   setExpanded(isExpanded ? panel : false);
-  // };
+  const doubleFunction = () => {
+    showMenu();
+    scrollUp();
+  };
+
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <motion.div
@@ -124,59 +137,185 @@ const Nav = () => {
         />
       </div>
 
-      {/* Mobile Menu Start */}
+      {/* Mobile Menu Start  */}
 
       <div
-        className={`${Styles.Mobile_Menu_Container} ${
-          menu ? Styles.Reveal : ""
-        }`}
+        // onClick={showMenu}
+        className={`${Styles.Mobile_Menu} ${menu ? Styles.Reveal : ""}`}
       >
         <div className={Styles.Content_Container}>
           <div className={Styles.Header}>
-            <div className={Styles.Logo_Container}>
-              <Link to={"/"}>
-                <img src="" alt="" className={Styles.Logo} />
-              </Link>
+            <div className={Styles.Menu_Left_Side}>
+              <div className={Styles.Logo_Container}>
+                <img
+                  src={`https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Logo.png?raw=true`}
+                  className={Styles.Logo}
+                  alt=""
+                />
+              </div>
+
+              <h3 className={Styles.Brand}>Dev Rook</h3>
             </div>
 
             <CloseIcon
-              sx={{ fontSize: 30, color: "white" }}
-              className={Styles.CloseIcon}
+              sx={{ fontSize: 25 }}
               onClick={showMenu}
+              className={Styles.Close_Icon}
             />
           </div>
 
           <ul className={Styles.Mobile_Navlink_Container}>
-            <Link to={""} className={Styles.Mobile_Navlink}>
-              <li onClick={showMenu} className={Styles.Mobile_NavItem}>
-                Knots & Ropes
+            <Link className={Styles.Navlink} to={"Men"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
+                Men
               </li>
             </Link>
-            <Link to={""} className={Styles.Mobile_Navlink}>
-              <li onClick={showMenu} className={Styles.Mobile_NavItem}>
-                Sails
+            <Link className={Styles.Navlink} to={"Women"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
+                Women
               </li>
             </Link>
-            <Link to={""} className={Styles.Mobile_Navlink}>
-              <li onClick={showMenu} className={Styles.Mobile_NavItem}>
-                Hull
+            <Link className={Styles.Navlink} to={"Electronics"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
+                Electronics
               </li>
             </Link>
-            <Link to={""} className={Styles.Mobile_Navlink}>
-              <li onClick={showMenu} className={Styles.Mobile_NavItem}>
-                Rigging
+            <Link className={Styles.Navlink} to={"Jewelery"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
+                Jewelery
               </li>
             </Link>
-            <Link to={""} className={Styles.Mobile_Navlink}>
-              <li onClick={showMenu} className={Styles.Mobile_NavItem}>
-                Maneuvering
+            <a
+              href={"https://github.com/Dev-Rook/merch"}
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={doubleFunction}
+              className={Styles.Menu_Navlink}
+            >
+              <li className={Styles.Menu_NavItem}>
+                <CodeIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Navlink_Icon}
+                />
+                <p>Add to this project?</p>
               </li>
-            </Link>
+            </a>
+            <li className={Styles.Menu_NavItem}>
+              <Accordion
+                expanded={expanded === "panel1"}
+                onChange={handleChange("panel1")}
+                className={Styles.Accordion}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+                  aria-controls="panel1bh-content"
+                  id="panel1bh-header"
+                >
+                  {/* <Typography
+                    sx={{ width: "33%", flexShrink: 0, color: "#319795" }}
+                  >
+                    Discord -
+                  </Typography> */}
+                  <Typography
+                    className={Styles.Accordion_Title}
+                    sx={{ color: "#ff7a00" }}
+                  >
+                    Code Runners - &nbsp;
+                    <a
+                      className={Styles.Discord_Link}
+                      target={"_blank"}
+                      rel={"noreferrer"}
+                      href="https://discord.gg/ce7mtCbgmG"
+                    >
+                      {/* <img
+                        src={require("../../../Assets/Icons/Discord-Logo.png")}
+                        alt=""
+                        className={Styles.Discord_Icon}
+                      /> */}
+                    </a>
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className={Styles.Code_Runners_Description}>
+                    Code Runners is a server that mainly focusses on Web
+                    Development. However there are categories for other forms of
+                    coding/programing.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </li>
           </ul>
+
+          <div className={Styles.Menu_Separater}></div>
+
+          {/* Weblink Container Start */}
+          <ul className={Styles.Weblink_Container}>
+            <h3 className={Styles.Title}>On The Web -</h3>
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={showMenu}
+              href="https://www.linkedin.com/in/dev-rook/"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <LinkedInIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
+                Daniel Brown
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={showMenu}
+              href="https://github.com/Dev-Rook"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <GitHubIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
+                Dev-Rook
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={showMenu}
+              href="https://twitter.com/Dev_Rook"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <TwitterIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
+                Dev_Rook
+              </li>
+            </a>
+            <a
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={showMenu}
+              href="https://rxresu.me/dev.rook121/developer-resume"
+              className={Styles.Weblink}
+            >
+              <li className={Styles.Weblink_Item}>
+                <InsertLinkIcon
+                  sx={{ fontSize: 25 }}
+                  className={Styles.Weblink_Icon}
+                />
+                Developer Resume
+              </li>
+            </a>
+          </ul>
+          {/* Weblink Container End */}
         </div>
       </div>
-
-      {/* Mobile Menu  End */}
+      {/* Mobile Menu End */}
     </motion.div>
   );
 };
