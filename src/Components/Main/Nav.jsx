@@ -6,12 +6,12 @@ import Styles from "../../Styles/Component-Styles/Nav.module.scss";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-// import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
-import LogoDevIcon from "@mui/icons-material/LogoDev";
-import CodeIcon from "@mui/icons-material/Code";
+// import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+// import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
+// import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+// // import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
+// import LogoDevIcon from "@mui/icons-material/LogoDev";
+// import CodeIcon from "@mui/icons-material/Code";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
@@ -57,10 +57,10 @@ const Nav = () => {
     });
   };
 
-  const doubleFunction = () => {
-    showMenu();
-    scrollUp();
-  };
+  // const doubleFunction = () => {
+  //   showMenu();
+  //   scrollUp();
+  // };
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -95,7 +95,7 @@ const Nav = () => {
           <li className={Styles.NavItem}>
             <ScrollLink
               to={"About"}
-              py={true}
+              py={"true"}
               smooth={true}
               offset={50}
               duration={500}
