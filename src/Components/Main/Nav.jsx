@@ -165,41 +165,7 @@ const Nav = () => {
           </div>
 
           <ul className={Styles.Mobile_Navlink_Container}>
-            <Link className={Styles.Navlink} to={"Men"}>
-              <li onClick={doubleFunction} className={Styles.NavItem}>
-                Men
-              </li>
-            </Link>
-            <Link className={Styles.Navlink} to={"Women"}>
-              <li onClick={doubleFunction} className={Styles.NavItem}>
-                Women
-              </li>
-            </Link>
-            <Link className={Styles.Navlink} to={"Electronics"}>
-              <li onClick={doubleFunction} className={Styles.NavItem}>
-                Electronics
-              </li>
-            </Link>
-            <Link className={Styles.Navlink} to={"Jewelery"}>
-              <li onClick={doubleFunction} className={Styles.NavItem}>
-                Jewelery
-              </li>
-            </Link>
-            <a
-              href={"https://github.com/Dev-Rook/merch"}
-              target={"_blank"}
-              rel={"noreferrer"}
-              onClick={doubleFunction}
-              className={Styles.Menu_Navlink}
-            >
-              <li className={Styles.Menu_NavItem}>
-                <CodeIcon
-                  sx={{ fontSize: 25 }}
-                  className={Styles.Navlink_Icon}
-                />
-                <p>Add to this project?</p>
-              </li>
-            </a>
+
             <li className={Styles.Menu_NavItem}>
               <Accordion
                 expanded={expanded === "panel1"}
@@ -218,7 +184,7 @@ const Nav = () => {
                   </Typography> */}
                   <Typography
                     className={Styles.Accordion_Title}
-                    sx={{ color: "#ff7a00" }}
+                    sx={{ color: "white" }}
                   >
                     Code Runners - &nbsp;
                     <a
