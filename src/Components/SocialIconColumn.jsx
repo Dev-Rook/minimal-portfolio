@@ -19,6 +19,7 @@ const Column = {
     transition: {
       delay: 0,
       duration: 2,
+      ease: "easeInOut"
     },
   },
 };
