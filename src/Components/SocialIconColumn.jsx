@@ -1,13 +1,36 @@
 import React from "react";
 import Styles from "../Styles/Component-Styles/IconBar.module.scss";
+import {motion} from "framer-motion"
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
+const Column = {
+  hidden: {
+    x: "-100vh",
+    opacity: 0,
+  },
+
+  visible: {
+    x: 0,
+    opacity: 1,
+
+    transition: {
+      delay: 0,
+      duration: 2,
+    },
+  },
+};
+
+
 const SocialIconColumn = () => {
   return (
-    <div className={Styles.IconBar}>
+    <motion.div className={Styles.IconBar}
+    variants={Column}
+    initial="hidden"
+    animate="visible"
+    >
       <a href="https://github.com/Dev-Rook" target={"_blank"} rel={"noreferrer"}>
         <GitHubIcon sx={{ fontSize: "20" }} />
       </a>
@@ -17,7 +40,7 @@ const SocialIconColumn = () => {
       <a href="https://twitter.com/Dev_Rook" target={"_blank"} rel={"noreferrer"}>
         <TwitterIcon sx={{ fontSize: "20" }} />
       </a>
-    </div>
+    </motion.div>
   );
 };
 
