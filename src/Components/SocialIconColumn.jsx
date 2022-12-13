@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Column = {
   hidden: {
-    x: "-100vh",
+    x: "-100vw",
     opacity: 0,
   },
 
@@ -28,9 +28,9 @@ const Column = {
 const SocialIconColumn = () => {
   return (
     <motion.div className={Styles.IconBar}
-    variants={Column}
-    initial="hidden"
-    animate="visible"
+    // variants={Column}
+    // initial="hidden"
+    // animate="visible"
     >
       <a href="https://github.com/Dev-Rook" target={"_blank"} rel={"noreferrer"}>
         <GitHubIcon sx={{ fontSize: "20" }} />

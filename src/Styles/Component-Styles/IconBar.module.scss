@@ -28,3 +28,16 @@
 }
 
 // Media Queries End
+
+
+// Animations Start
+
+@keyframes slideIn {
+  from {
+    left: -100vw;
+  } to {
+    right: 0px;
+  }
+}
+
+// Animations End
