@@ -38,19 +38,19 @@
     {
         "id": 3,
         "Image": "",
-        "Title": "Project Title",
-        "Description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis tempore nulla praesentium illo sapiente quos error delectus quaerat suscipit?",
+        "Title": "Hopewell High School",
+        "Description": "Website for the Hopewell High School. Although currently under construction, work is being performed to make it suitable for deplyment.",
         "Stacks": {
-            "stack_1": "",
-            "stack_2": "",
-            "stack_3": "",
-            "stack_4": "",
-            "stack_5": "",
-            "stack_6": ""
+            "stack_1": "React Js",
+            "stack_2": "MUI",
+            "stack_3": "Bootstrap",
+            "stack_4": "Sass",
+            "stack_5": "JavaScript",
+            "stack_6": "Framer Motion"
         },
         "Links": {
-            "Code": "",
-            "Demo": ""
+            "Code": "https://github.com/Dev-Rook/hopewell-high",
+            "Demo": "https://hopewellhigh.vercel.app/"
         }
     },
     {

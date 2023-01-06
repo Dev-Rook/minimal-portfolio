@@ -10,7 +10,7 @@ import ProjectData from "../Assets/Data/ProjectData.json";
 
 const Portfolio = () => {
   const [data, setData] = useState(ProjectData);
-  const [visible, setVisible] = useState(2)
+  const [visible, setVisible] = useState(3)
 
   useEffect(() => {
     AOS.init();
