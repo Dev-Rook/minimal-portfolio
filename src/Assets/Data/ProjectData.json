@@ -37,7 +37,7 @@
     },
     {
         "id": 3,
-        "Image": "",
+        "Image": "https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Images/WebSite-Thumbnails/Hopewell-High.png?raw=true",
         "Title": "Hopewell High School",
         "Description": "Website for the Hopewell High School. Although currently under construction, work is being performed to make it suitable for deplyment.",
         "Stacks": {
